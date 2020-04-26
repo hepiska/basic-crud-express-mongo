@@ -1,0 +1,45 @@
+{
+  "name": "basic-crud-be",
+  "version": "0.0.1",
+  "description": "basic be with auth",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --require @babel/register",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/index.js",
+    "start": "NODE_ENV=production node server.js",
+    "watch": "NODE_ENV=production nodemon app.js --exec babel-node"
+  },
+  "author": "hepiska",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "app-module-path": "^2.2.0",
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "mongoose-delete": "^0.5.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-stage-3": "^7.0.0",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "eslint": "^5.11.1",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.15.3"
+  }
+}
