@@ -1,2 +1,20 @@
-node_modules
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output directory
+dist/
+
+# Ignore environment variables file
 .env
+
+# Ignore log files
+*.log
+
+# Ignore test coverage reports
+coverage/
+
+# Ignore TypeScript build output
+*.js
+*.d.ts
+*.map
+*.key

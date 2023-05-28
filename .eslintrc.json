@@ -1,0 +1,15 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "comma-dangle": 1,
+    "comma-spacing": "error",
+    "comma-style": "error",
+    "no-console": "error",
+    "complexity": [
+      "error",
+      50
+    ]
+  }
+}
