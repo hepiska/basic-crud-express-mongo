@@ -2,7 +2,7 @@ import { DataSource, EntitySchema, MixedList } from "typeorm"
 import logger from "../utils/logger";
 import config from "../config";
 
-export const intiateDataSource = (entities: MixedList<string | EntitySchema<any>> | undefined) => {
+export const intiateDataSource = (entities: any[]) => {
   const AppDataSource = new DataSource({
     type: "mongodb",
     useNewUrlParser: true,
