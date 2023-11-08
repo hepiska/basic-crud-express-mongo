@@ -8,11 +8,15 @@ import logger from './utils/logger';
 import { errorMiddleware } from './utils/middlewares/error';
 import { extractUser } from "./utils/middlewares/auth"
 import "./data-source"
+import "./messaging/consumers"
+import config from "./config"
+
+
 
 
 
 const app = express();
-const port = 3000;
+const port = config.service_port;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
