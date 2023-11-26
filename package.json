@@ -9,8 +9,6 @@
     "helmet": "^7.0.0",
     "joi": "^17.9.2",
     "jsonwebtoken": "^9.0.0",
-    "kafka-js": "^0.0.0",
-    "kafkajs": "^2.2.4",
     "mongodb": "^5.5.0",
     "morgan": "^1.10.0",
     "processenv": "^3.0.9",
@@ -42,7 +40,6 @@
   "scripts": {
     "test": "jest",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "build": "tsc",
     "lint": "eslint . --ext .ts"
   },
   "author": "",
